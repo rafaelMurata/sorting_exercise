@@ -8,7 +8,7 @@ public class MessageFactory {
     public static Message generateMessage(int counter) throws InterruptedException {
         long sleepTime = 50 + (long) ((Math.random() - 0.8) * 10);
         Thread.sleep(sleepTime);
-        return new Message(System.currentTimeMillis(), getRandomPriority(),"Message id: " + counter );
+        return new Message(System.currentTimeMillis(), getRandomPriority(),"Message id:" + counter );
     }
 
     private static Priority getRandomPriority() {
