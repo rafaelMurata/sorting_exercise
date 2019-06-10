@@ -22,6 +22,7 @@ public class Main {
         } catch (InterruptedException e) {
             // ignore this exception and allow main method to exit
         } finally {
+        		//task2 low complexity sorting algorithm
             producer.stopProducing();
             consumer.stopConsuming();
             consumer.sortByQuickSort();
