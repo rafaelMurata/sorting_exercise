@@ -52,7 +52,7 @@ public class Consumer {
 		ObjectOutputStream oos = null;
 
 		try {
-			fout = new FileOutputStream("\\Users\\rafaelmurata\\Documents\\workspace\\estudos\\entrevista\\messageoutput.txt");
+			fout = new FileOutputStream("\\Users\\rafaelmurata\\Documents\\workspace\\messageoutput.txt");
 			oos = new ObjectOutputStream(fout);
 			oos.writeObject(message.toString());
 
